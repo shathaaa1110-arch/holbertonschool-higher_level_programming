@@ -8,14 +8,14 @@ Prints a dictionary by ordered keys.
 def print_sorted_dictionary(a_dictionary):
     """
     Prints a dictionary by ordered keys.
-    
+
     Args:
         a_dictionary: A dictionary with string keys
-    
+
     Prints:
         The dictionary items sorted by keys alphabetically.
         Only sorts keys of the first level (doesn't sort nested dictionaries).
-    
+
     Example:
         >>> a_dictionary = {'language': "C", 'Number': 89, 'track': "Low level", 'ids': [1, 2, 3]}
         >>> print_sorted_dictionary(a_dictionary)

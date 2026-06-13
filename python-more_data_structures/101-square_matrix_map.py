@@ -8,19 +8,19 @@ Computes the square value of all integers of a matrix using map.
 def square_matrix_map(matrix=[]):
     """
     Computes the square value of all integers of a matrix using map.
-    
+
     Args:
         matrix: A 2 dimensional array (list of lists)
-    
+
     Returns:
         A new matrix with the same size where each value is squared.
         The initial matrix is not modified.
-    
+
     Note:
         This function uses map() instead of loops.
         You are not allowed to use for or while loops.
         The file should be max 3 lines.
-    
+
     Example:
         >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
         >>> new_matrix = square_matrix_map(matrix)

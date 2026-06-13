@@ -8,16 +8,16 @@ Returns a set of all elements present in only one set.
 def only_diff_elements(set_1, set_2):
     """
     Returns a set of all elements present in only one set.
-    
-    Args:
+
+Args:
         set_1: First set
         set_2: Second set
-    
-    Returns:
+
+Returns:
         A new set containing elements that are in set_1 or set_2 but not in both.
         This is the symmetric difference of the two sets.
-    
-    Example:
+
+Example:
         >>> set_1 = {"Python", "C", "Javascript"}
         >>> set_2 = {"Bash", "C", "Ruby", "Perl"}
         >>> od_set = only_diff_elements(set_1, set_2)

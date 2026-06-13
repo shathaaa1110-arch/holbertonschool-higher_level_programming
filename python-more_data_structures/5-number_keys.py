@@ -8,13 +8,13 @@ Returns the number of keys in a dictionary.
 def number_keys(a_dictionary):
     """
     Returns the number of keys in a dictionary.
-    
+
     Args:
         a_dictionary: A dictionary
-    
+
     Returns:
         The number of keys in the dictionary.
-    
+
     Example:
         >>> a_dictionary = {'language': "C", 'number': 13, 'track': "Low level"}
         >>> nb_keys = number_keys(a_dictionary)
