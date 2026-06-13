@@ -23,12 +23,4 @@ TypeError: text must be a string
 >>> text_indentation()
 Traceback (most recent call last):
     ...
-TypeError: text_indentation() missing 1 required positional argument: 'text'ion(12)
-Traceback (most recent call last):
-    ...
-TypeError: text must be a string
-
->>> text_indentation()
-Traceback (most recent call last):
-    ...
 TypeError: text_indentation() missing 1 required positional argument: 'text'
