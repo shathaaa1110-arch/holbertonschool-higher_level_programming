@@ -1,37 +1,39 @@
-=================================
-Tests for text_indentation module
-=================================
+======================================
+How to Use 5-text_indentation
+======================================
 
-    >>> text_indentation = __import__('5-text_indentation').text_indentation
+This module defines a function ``text_indentation(text)``.
 
-Basic period:
-    >>> text_indentation("Hello. World")
-    Hello.
-    <BLANKLINE>
-    World
+Usage:
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 
-Question mark:
-    >>> text_indentation("How are you? Fine")
-    How are you?
-    <BLANKLINE>
-    Fine
+>>> text_indentation("Holberton. School? How are you: John")
+Holberton.
+<BLANKLINE>
+School?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+John
 
-Colon:
-    >>> text_indentation("Note: done")
-    Note:
-    <BLANKLINE>
-    done
+>>> text_indentation("Hello.\n\nWorld.")
+Hello.
+<BLANKLINE>
+<BLANKLINE>
+World.
+<BLANKLINE>
 
-Not a string:
-    >>> text_indentation(42)
-    Traceback (most recent call last):
-    TypeError: text must be a string
+>>> text_indentation(12)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
 
-Multiple punctuation:
-    >>> text_indentation("Hi. Bye? OK:")
-    Hi.
-    <BLANKLINE>
-    Bye?
-    <BLANKLINE>
-    OK:
-    <BLANKLINE>
+>>> text_indentation(None)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
