@@ -1,0 +1,37 @@
+=================================
+Tests for text_indentation module
+=================================
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Basic period:
+    >>> text_indentation("Hello. World")
+    Hello.
+    <BLANKLINE>
+    World
+
+Question mark:
+    >>> text_indentation("How are you? Fine")
+    How are you?
+    <BLANKLINE>
+    Fine
+
+Colon:
+    >>> text_indentation("Note: done")
+    Note:
+    <BLANKLINE>
+    done
+
+Not a string:
+    >>> text_indentation(42)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Multiple punctuation:
+    >>> text_indentation("Hi. Bye? OK:")
+    Hi.
+    <BLANKLINE>
+    Bye?
+    <BLANKLINE>
+    OK:
+    <BLANKLINE>

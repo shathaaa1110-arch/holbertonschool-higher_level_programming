@@ -1,0 +1,33 @@
+==============================
+Tests for matrix_mul module
+==============================
+
+    >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+Standard 2x2 multiplication:
+    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+    [[7, 10], [15, 22]]
+
+1x2 times 2x2:
+    >>> matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+    [[13, 16]]
+
+m_a not a list:
+    >>> matrix_mul("not a list", [[1]])
+    Traceback (most recent call last):
+    TypeError: m_a must be a list
+
+m_b empty:
+    >>> matrix_mul([[1, 2]], [[]])
+    Traceback (most recent call last):
+    ValueError: m_b can't be empty
+
+Incompatible sizes:
+    >>> matrix_mul([[1, 2]], [[1, 2]])
+    Traceback (most recent call last):
+    ValueError: m_a and m_b can't be multiplied
+
+Contains non-number:
+    >>> matrix_mul([[1, "a"]], [[1], [2]])
+    Traceback (most recent call last):
+    TypeError: m_a should contain only integers or floats
