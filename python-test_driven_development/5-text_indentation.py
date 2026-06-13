@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+"""
+This module provides a function to format and indent text.
+"""
+
+
 def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
-    
+
     flag = 0
     for char in text:
         if flag == 1:
