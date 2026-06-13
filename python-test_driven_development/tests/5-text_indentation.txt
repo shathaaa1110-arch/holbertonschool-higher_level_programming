@@ -2,11 +2,7 @@
 How to Use 5-text_indentation
 ======================================
 
-This module defines a function ``text_indentation(text)``.
-
-Usage:
 >>> text_indentation = __import__('5-text_indentation').text_indentation
-
 >>> text_indentation("Holberton. School? How are you: John")
 Holberton.
 <BLANKLINE>
@@ -15,14 +11,19 @@ School?
 How are you:
 <BLANKLINE>
 John
-
 >>> text_indentation("Hello.\n\nWorld.")
 Hello.
 <BLANKLINE>
 <BLANKLINE>
 World.
-
 >>> text_indentation(12)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'ion(12)
 Traceback (most recent call last):
     ...
 TypeError: text must be a string
