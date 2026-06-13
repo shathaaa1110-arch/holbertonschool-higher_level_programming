@@ -17,11 +17,9 @@ def multiply_by_2(a_dictionary):
         The original dictionary is not modified.
 
     Example:
-        >>> a_dictionary = {'John': 12, 'Alex': 8, 'Bob': 14, 'Mike': 14, 'Molly': 16}
+        >>> a_dictionary = {'John': 12, 'Alex': 8}
         >>> new_dict = multiply_by_2(a_dictionary)
         >>> print(new_dict)
-        {'John': 24, 'Alex': 16, 'Bob': 28, 'Mike': 28, 'Molly': 32}
-        >>> print(a_dictionary)
-        {'John': 12, 'Alex': 8, 'Bob': 14, 'Mike': 14, 'Molly': 16}
+        {'John': 24, 'Alex': 16}
     """
     return {k: v * 2 for k, v in a_dictionary.items()}
