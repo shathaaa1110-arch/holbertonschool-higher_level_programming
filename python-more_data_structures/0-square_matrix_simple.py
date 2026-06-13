@@ -8,14 +8,14 @@ Computes the square value of all integers of a matrix.
 def square_matrix_simple(matrix=[]):
     """
     Computes the square value of all integers of a matrix.
-    
+
     Args:
         matrix: A 2 dimensional array (list of lists)
-    
+
     Returns:
         A new matrix with the same size where each value is squared.
         The initial matrix is not modified.
-    
+
     Example:
         >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
         >>> new_matrix = square_matrix_simple(matrix)
