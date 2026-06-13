@@ -20,14 +20,10 @@ def update_dictionary(a_dictionary, key, value):
         If the key doesn't exist, it is created with the new value.
 
     Example:
-        >>> a_dictionary = {'language': "C", 'number': 89, 'track': "Low level"}
+        >>> a_dictionary = {'language': "C", 'number': 89}
         >>> new_dict = update_dictionary(a_dictionary, 'language', "Python")
         >>> print(new_dict)
-        {'language': 'Python', 'number': 89, 'track': 'Low level'}
-
-        >>> new_dict = update_dictionary(a_dictionary, 'city', "San Francisco")
-        >>> print(new_dict)
-        {'language': 'Python', 'number': 89, 'track': 'Low level', 'city': 'San Francisco'}
+        {'language': 'Python', 'number': 89}
     """
     a_dictionary[key] = value
     return a_dictionary
