@@ -1,4 +1,4 @@
-##!/usr/bin/python3
+#!/usr/bin/python3
 """
 Module: 5-number_keys
 Returns the number of keys in a dictionary.
