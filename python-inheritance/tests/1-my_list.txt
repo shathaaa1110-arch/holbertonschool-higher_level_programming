@@ -8,34 +8,41 @@ First, import ``MyList``:
 
     >>> MyList = __import__('1-my_list').MyList
 
-Now you can create a ``MyList`` instance:
-
+Check instantiation and inheritance:
     >>> my_list = MyList()
-    >>> my_list
+    >>> isinstance(my_list, list)
+    True
+    >>> issubclass(MyList, list)
+    True
+
+Check empty list and __str__:
+    >>> print(my_list)
+    []
+    >>> my_list.print_sorted()
     []
 
-You can append elements to it:
-
+Check append() and print_sorted() with not sorted append:
     >>> my_list.append(1)
     >>> my_list.append(4)
     >>> my_list.append(2)
     >>> my_list.append(3)
     >>> my_list.append(5)
-    >>> my_list
-    [1, 4, 2, 3, 5]
-
-The ``print_sorted()`` method prints the list in ascending order:
-
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
 
-But the original list remains unmodified:
-
-    >>> my_list
+Check that the original list remains unmodified:
+    >>> print(my_list)
     [1, 4, 2, 3, 5]
 
-It works with negative numbers too:
+Check print_sorted() with already sorted append:
+    >>> m2 = MyList()
+    >>> m2.append(1)
+    >>> m2.append(2)
+    >>> m2.append(3)
+    >>> m2.print_sorted()
+    [1, 2, 3]
 
+Check print_sorted() with negative numbers:
     >>> my_list_2 = MyList()
     >>> my_list_2.append(-5)
     >>> my_list_2.append(-1)
